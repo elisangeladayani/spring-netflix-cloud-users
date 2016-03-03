@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableEurekaClient
+//@EnableEurekaClient
 @RestController
 public class ApplicationConfiguration {
 
@@ -33,6 +33,12 @@ public class ApplicationConfiguration {
     @RequestMapping(value = "/users", method = RequestMethod.GET, produces = {"application/json"})
     public ArrayList<UserTest> findAll() {
         LOGGER.info("********** Find All *****************");
+
+        try {
+            Thread.sleep(100L);
+        } catch (InterruptedException e) {
+            LOGGER.error("Error find all",e);
+        }
         return Lists.newArrayList(new UserTest("1","Thor"), new UserTest("2","Wolverine"), new UserTest("3","Hulk"));
     }
 
