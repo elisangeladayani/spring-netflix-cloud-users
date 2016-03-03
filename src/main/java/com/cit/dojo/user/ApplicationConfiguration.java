@@ -1,5 +1,6 @@
 package com.cit.dojo.user;
 
+import com.cit.dojo.user.domain.UserTest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
@@ -16,8 +17,8 @@ import javax.ws.rs.PathParam;
 public class ApplicationConfiguration {
 
     @RequestMapping("/users/{id}")
-    public String findById(@PathParam("id") String id) {
-        return "xxxx";
+    public UserTest findById(@PathParam("id") String id) {
+        return new UserTest("xxx","xxxx");
     }
 
     @RequestMapping("/users")
