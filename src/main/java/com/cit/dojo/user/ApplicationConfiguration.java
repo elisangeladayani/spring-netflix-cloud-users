@@ -16,8 +16,8 @@ import javax.ws.rs.PathParam;
 public class ApplicationConfiguration {
 
     @RequestMapping("/users/{id}")
-    public User findById(@PathParam("id") String id) {
-        return new User("1", "Teste");
+    public String findById(@PathParam("id") String id) {
+        return "xxxx";
     }
 
     @RequestMapping("/users")
