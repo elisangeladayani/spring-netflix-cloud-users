@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cit.dojo</groupId>
-	<artifactId>spring-netflix-cloud-product</artifactId>
+	<artifactId>spring-netflix-cloud-users</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-netflix-cloud-product</name>
+	<name>spring-netflix-cloud-users</name>
 	<description>Demo project for Spring Boot</description>
 
 	<dependencyManagement>
