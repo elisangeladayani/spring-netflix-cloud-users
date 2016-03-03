@@ -15,8 +15,8 @@ public class User {
 
     }
 
-    public User(Long id, String name) {
-        this.id. = id;
+    public User(String id, String name) {
+        this.id = id;
         this.name = name;
     }
 
