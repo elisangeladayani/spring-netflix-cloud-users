@@ -1,12 +1,7 @@
-package com.citdojo.user;
-
-import java.math.BigDecimal;
-
-import org.springframework.data.annotation.Id;
+package com.cit.dojo.user;
 
 public class User {
 
-    @Id
     String id;
 
     String name;
