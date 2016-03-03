@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import org.springframework.data.annotation.Id;
 
-public class Product {
+public class User {
 
     @Id
     String id;
