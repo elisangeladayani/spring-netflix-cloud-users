@@ -3,17 +3,17 @@ package com.cit.dojo.user.domain;
 /**
  * Created by Dayani on 03/03/16.
  */
-public class UserTest {
+public class User {
 
     String id;
 
     String name;
 
-    public UserTest() {
+    public User() {
 
     }
 
-    public UserTest(String id, String name) {
+    public User(String id, String name) {
         this.id = id;
         this.name = name;
     }
